@@ -14,16 +14,16 @@ import java.util.List;
 
 @RestController
 public class HelloWorld {
-    private static final Logger logger = LoggerFactory.getLogger(HelloWorld.class);
-    @Value("${spring.application.name}")
-    private String applicationName;
-
-    @Autowired
-    private AttemptsRepository attemptsRepository;
-
-    @GetMapping(value = "/greeting")
-    public List<Attempts> greeting(){
-        logger.info("Application name >>>>> {}", applicationName);
-        return attemptsRepository.findAll();
-    }
+//    private static final Logger logger = LoggerFactory.getLogger(HelloWorld.class);
+//    @Value("${spring.application.name}")
+//    private String applicationName;
+//
+//    @Autowired
+//    private AttemptsRepository attemptsRepository;
+//
+//    @GetMapping(value = "/greeting")
+//    public List<Attempts> greeting(){
+//        logger.info("Application name >>>>> {}", applicationName);
+//        return attemptsRepository.findAll();
+//    }
 }
